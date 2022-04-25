@@ -6,7 +6,7 @@ let windowRef;
 
 function createWindow() {
   const mainWindow = new BrowserWindow({
-    width: 1200,
+    width: 1000,
     height: 675,
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
@@ -14,7 +14,6 @@ function createWindow() {
     },
   });
   mainWindow.loadFile("./index.html");
-  mainWindow.webContents.openDevTools();
 
   windowRef = mainWindow;
 }

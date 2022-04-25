@@ -28,6 +28,7 @@ window.ipcRenderer.on("file-error", (_, args) => {
 });
 
 window.ipcRenderer.on("transcibe-text", (_, args) => {
+  transcribedText.style.display = "block";
   transcribedText.textContent = args;
   audioEl.load();
   audioEl.play();
