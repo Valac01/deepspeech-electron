@@ -94,3 +94,24 @@ audio::-webkit-media-controls-time-remaining-display {
 #select-file-btn {
   display: inline-block;
 }
+
+.spinner {
+  display: none;
+  margin-top: 16px;
+  align-self: center;
+  width: 30px;
+  height: 30px;
+  border: var(--primary-color) 4px solid;
+  border-bottom: transparent 4px solid;
+  border-radius: 100px;
+  animation: spining 1600ms infinite linear;
+}
+
+@keyframes spining {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
